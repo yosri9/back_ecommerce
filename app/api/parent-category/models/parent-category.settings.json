@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parent_categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "product": {
+      "via": "categories",
+      "model": "product"
+    }
+  }
+}

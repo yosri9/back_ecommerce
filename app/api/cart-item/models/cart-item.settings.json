@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_items",
+  "info": {
+    "name": "CartItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "type": "float"
+    },
+    "cart": {
+      "model": "cart",
+      "via": "cart_item"
+    },
+    "product": {
+      "model": "product"
+    }
+  }
+}

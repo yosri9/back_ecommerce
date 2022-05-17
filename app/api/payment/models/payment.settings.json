@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "name": "Payment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "credit_card_number": {
+      "type": "biginteger"
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "cash",
+        "credit_card"
+      ]
+    },
+    "users_permissions_user": {
+      "via": "payments",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
