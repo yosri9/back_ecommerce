@@ -27,3 +27,14 @@ services:
       MYSQL_DATABASE: strapi
       MYSQL_USER: strapi
       MYSQL_PASSWORD: strapi
+    ports:
+      - 3306:3306
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - 3310:3310
