@@ -15,12 +15,12 @@
     "quantity": {
       "type": "float"
     },
-    "cart": {
-      "model": "cart",
-      "via": "cart_item"
-    },
     "product": {
       "model": "product"
+    },
+    "cart": {
+      "via": "cart_items",
+      "model": "cart"
     }
   }
 }

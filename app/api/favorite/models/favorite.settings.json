@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "favorites",
   "info": {
-    "name": "Favorite"
+    "name": "Favorite",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,9 +17,9 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "products": {
+    "favorite_products": {
       "via": "favorite",
-      "collection": "product"
+      "collection": "favorite-product"
     }
   }
 }

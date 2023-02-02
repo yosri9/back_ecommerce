@@ -16,7 +16,7 @@
       "type": "string"
     },
     "quantity": {
-      "type": "float"
+      "type": "integer"
     },
     "rating": {
       "type": "float"
@@ -37,10 +37,6 @@
       "via": "products",
       "model": "discount"
     },
-    "favorite": {
-      "via": "products",
-      "model": "favorite"
-    },
     "price": {
       "type": "float"
     },
@@ -54,6 +50,18 @@
     "product_url": {
       "type": "string",
       "unique": true
+    },
+    "descriptions": {
+      "via": "product",
+      "collection": "description"
+    },
+    "product_images": {
+      "via": "product",
+      "collection": "product-images"
+    },
+    "favorite_products": {
+      "via": "product",
+      "collection": "favorite-product"
     }
   }
 }

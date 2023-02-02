@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/products/get_notified",
+      "handler": "product.getNotified",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

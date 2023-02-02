@@ -12,8 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "cart": {
-      "model": "cart",
-      "via": "order"
+      "via": "order",
+      "model": "cart"
     }
   }
 }
